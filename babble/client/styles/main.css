@@ -1,0 +1,26 @@
+body {
+    font-family: Inconsolata JosefinSans;
+}
+header {
+    background-color: rgb(53, 55, 68);
+    height: 14%;
+    width: 100%;
+    position: fixed;
+    color: white;
+}
+
+.LeftSideNav {
+    background-color: rgb(97, 210, 144);
+    height: 100%;
+    width: 18%;
+    position: fixed;
+    top: 16%;
+}
+.hidden{
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden
+}
