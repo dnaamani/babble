@@ -1,0 +1,24 @@
+{
+  "name": "babble",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine",
+    "start": "node server/main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "express": "^4.15.4",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "md5": "^2.2.1",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "jasmine": "^2.7.0"
+  }
+}
