@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>Vegans - Babble</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet"
+          type="text/css">
+  
+    <link rel="stylesheet" href="/styles/main.css">
+
+    <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body onload="onload()">
+
+<header>
+    <img src="/images/chat.png" height="77" width="186"/>
+</header>
+
+<main>
+    <aside>
+
+    </aside>
+
+    <article>
+        <div class="padder">
+            <div class="outer-messages">
+                <h2 class="title">Vegans</h2>
+                <div class="f-r">
+                    
+                    <img class="user-icon" src="/images/msg-icon.png" alt="messages"> <span class="envelope" style="margin-right: 5px"></span>
+                    <img class="msg-icon" src="/images/users-icon.png" alt="users"><span class="users"></span>
+                </div>
+
+                <ul id="message-list">
+
+
+                </ul>
+            </div>
+            <div class="outer-form">
+                <div class="form">
+
+                    <!--<textarea id="output"></textarea>-->
+					<div class="Growable js-growable" >
+						<pre><span></span><br></pre>
+						<textarea id="output"></textarea>
+					</div>
+
+                    <div>
+                        <img src="/images/send-button.png" onclick="sendButtonClick()" class="send-button" alt="">
+                        <button style="display: none;" id="btnSend">Send</button>
+                    </div>
+                    <div style="clear: both"></div>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- the aside content can also be nested within the main content -->
+
+
+</main>
+
+<footer>
+
+
+</footer>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+
+        <span class="close">&times;</span>
+        <h1>Who are you</h1>
+        <table>
+            <tr>
+                <td>
+                    <label for="username">Full name</label>
+                </td>
+                <td>
+                    <input type="text" id="username">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="text" id="email"></td>
+            </tr>
+        </table>
+
+        <button id="stayAnym" class="stayAnym">Stay Anonymous</button>
+        <button id="save" class="save">Save</button>
+        <br>
+    </div>
+
+</div>
+
+<script src="/scripts/main.js"></script>
+</body>
+</html>

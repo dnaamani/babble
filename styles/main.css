@@ -1,0 +1,229 @@
+/* || General setup */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+html {
+    font-size: 10px;
+    background: #f3f3f4;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #2f4050;
+    padding: 10px;
+
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+main {
+    
+    display: flex;
+
+    flex: 1;
+}
+.Growable {
+    position: relative;
+    border: 1px solid;
+    max-height: 300px;
+    overflow: hidden;
+    width: 100%;
+}		
+		
+.Growable textarea,		
+.Growable pre {		
+	margin: 0;		
+	padding: 0;		
+	box-sizing: border-box;		
+	font-family: inherit;		
+	font-size: inherit;		
+	white-space: pre-wrap;		
+	word-wrap: break-word;		
+	padding: 0.5em;		
+}		
+		
+.Growable textarea {		
+			
+	resize: none;		
+	border: none;		
+	width: 100%;
+	position: absolute;		
+	top: 0; left: 0;		
+	height: 100%;		
+	overflow: visible;		
+}
+
+@media (max-width: 320px) {
+  aside {
+    display: none;
+	width: 0px;
+  }
+}
+@media (min-width: 320px) and (max-width: 638px) {
+  aside {
+      height: 100%;
+    background-color: #1ab394;
+    flex: 1;
+  }
+}
+@media (min-width: 638px)  {
+  aside {
+      height: 100%;
+    background-color: #1ab394;
+    flex: 1;
+  }
+}
+.title {
+    font-size: 24px;
+    color: #676a6c;
+    font-weight: normal;
+}
+
+article {
+    height: calc(100% - 20px);
+    flex: 6;
+    padding: 10px;
+    position: relative;
+    display: flex;
+}
+
+.comment {
+    width: 80%;
+    position: relative;
+    margin: 10px 0;
+}
+
+img.circle {
+    width: 30px;
+    height: 30px;
+    border: 1px solid gray;
+    padding: 3px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.user-text {
+    margin-left: 40px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    background-color: #fff;
+    padding: 5px;
+    width: 50%;
+    min-height: 50px;
+    position: relative;
+}
+
+.user-text:hover {
+    background-color: #ccc;
+}
+
+.comment .close {
+    color: #333;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.padder {
+    padding: 15px 15px 15px 0;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.outer-messages {
+    flex: 5;
+}
+
+/* The Modal (background) */
+.send-button {
+    cursor: pointer;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.save {
+    background-color: greenyellow;
+}
+
+
+
+.form {
+    display: flex;
+}
+
+.form textarea {
+    flex: 1;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    min-height: 70px;
+}
+
+.f-r {
+    position: absolute;
+    right: 10px;
+    top: 60px;
+}
+
+.user-icon{
+
+    display: inline-block;
+    margin-bottom: -10px;
+}
+
+.msg-icon{
+    display: inline-block;
+    margin-bottom: -6px;
+}
